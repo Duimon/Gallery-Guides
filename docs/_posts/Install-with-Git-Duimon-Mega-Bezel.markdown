@@ -1,31 +1,15 @@
 ---
 layout: "post"
-title: "Install with Git"
-subtitle: "Installing Duimon-Mega-Bezel using Git"
+title: "Install With Git"
+subtitle: "Installing Duimon-Mega-Bezel Using Git"
 active: "journal"
 image:
   feature: "guides-bg.jpg"
 date: "2021-09-28"
 header-img: "img/guides-bg.jpg"
+tags: [tag01, tag02]
+categories: [cat01, cat02]
 comments: "true"
----
-
-
-<html class="no-js" lang="en">
-<head>
-	<meta content="charset=utf-8">
-</head>
-
-    <body>
-
-<section id="content" role="main">
-		<div class="wrapper">
-	<br><br>
-			<h2>{{page.title}}</h2>
-
-
-
-
 <p> You can install everything to a local clone and update using the following method.
 
 1. Install Git. [https://git-scm.com/downloads](https://git-scm.com/downloads) using the default settings.
@@ -46,7 +30,3 @@ git pull
 ___
 
 **Thanks @drstupid for the method.** </p>
-
-		</div><!-- end of WRAPPER __ -->
-		</body>
-	</section>
