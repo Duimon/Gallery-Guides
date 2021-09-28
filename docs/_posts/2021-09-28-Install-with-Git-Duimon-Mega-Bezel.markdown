@@ -9,8 +9,10 @@ date: "2021-09-28"
 header-img: "img/guides-bg.jpg"
 tags: [tag01, tag02]
 categories: [cat01, cat02]
-comments: "true"
-<p> You can install everything to a local clone and update using the following method.
+comments: "false"
+---
+
+You can install everything to a local clone and update using the following method.
 
 1. Install Git. [https://git-scm.com/downloads](https://git-scm.com/downloads) using the default settings.
 2. Enter the "/Retroarch/shaders" folder and create a "Mega_Bezel_Community" folder if one does not exist.
@@ -29,4 +31,4 @@ git pull
 ```
 ___
 
-**Thanks @drstupid for the method.** </p>
+**Thanks @drstupid for the method.**
