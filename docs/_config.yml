@@ -13,7 +13,7 @@ share: true
 # Owner/author information
 owner:
   name:   Duimon
-  avatar: avatar.png
+  avatar:
   favicon: favicon.ico
   info: Duimon-Mega-Bezel-Graphics
 
