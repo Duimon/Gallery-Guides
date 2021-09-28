@@ -1,9 +1,9 @@
 # Site settings
-title: Duimon-Mega-Bezel-Graphics
+title: Gallery-Guides-Graphics
 email: ""
-description: "Duimon-Mega-Bezel-Graphics"
+description: "Gallery-Guides-Graphics"
 url: ""
-baseurl: "/Duimon-Mega-Bezel"
+baseurl: "/Gallery-Guides"
 github_username:  "Duimon"
 deviantart_username: "dhuseby"
 discus_shortname: ""
@@ -29,9 +29,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "/Duimon-Mega-Bezel/gallery/"  
-  - GUIDES: "/Duimon-Mega-Bezel/journal/"
-  - ABOUT: "/Duimon-Mega-Bezel/about/"
+  - GALLERY: "/Gallery-Guides/gallery/"  
+  - GUIDES: "/Gallery-Guides/journal/"
+  - ABOUT: "/Gallery-Guides/about/"
 
 # All translation keys
 translations:
