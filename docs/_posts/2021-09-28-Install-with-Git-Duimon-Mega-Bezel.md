@@ -12,7 +12,7 @@ categories: [MegaBezel]
 comments: "false"
 ---
 
-The Mega Bezel Community is collaboration between a growing collection of artists and the shader developer.
+The Mega Bezel Community is a collaboration between a growing collection of artists and the shader developer.
 
 We have agreed, in an effort to create cohesion among our various projects, to intend 
 our works reside in a "Mega Bezel Community" folder. (Within the RA shader folder.) This
