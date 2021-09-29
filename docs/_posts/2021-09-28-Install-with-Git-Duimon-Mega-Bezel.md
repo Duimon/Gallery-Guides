@@ -21,7 +21,8 @@ artists presets.
 
 To that end our presets are using relative paths to the assets, and absolute paths to the Mega Bezel base presets.
 
-It should be noted that this is not a requirement. As long as each of our work remains in it's distributed folder, the folder can reside anywhere under the Retroarch root path.
+It should be noted that the Mega Bezel Community folder is not a requirement. As long as each of our work 
+remains in it's distributed folder, the folder can reside anywhere under the Retroarch root path.
 
 The following instructions assume a Mega Bezel Community folder.
 
