@@ -41,7 +41,7 @@ git clone https://github.com/Duimon/Duimon-Mega-Bezel
 
 it will create a "Duimon-Mega-Bezel" folder inside the Mega_Bezel_Community folder. 
 
-To update, go into *the "Duimon-Mega-Bezel" folder* (note difference) and run
+To update, go into *the "Duimon-Mega-Bezel" folder* (note the path difference) and run
 
 ```
 git pull
