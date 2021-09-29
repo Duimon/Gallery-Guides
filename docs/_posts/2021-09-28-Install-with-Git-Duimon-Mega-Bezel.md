@@ -5,6 +5,7 @@ subtitle: "Installing Duimon-Mega-Bezel Using Git"
 active: "journal"
 image:
 date: "2021-09-28"
+header-img: "img/guides-header.jpg"
 tags: [tag01, tag02]
 categories: [cat01, cat02]
 comments: "false"
