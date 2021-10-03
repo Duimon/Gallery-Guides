@@ -32,16 +32,16 @@ ___
 You can install everything to a local clone and update using the following method.
 
 1. Install Git. [https://git-scm.com/downloads](https://git-scm.com/downloads) using the default settings.
-2. Enter the "/Retroarch/shaders" folder and create a "Mega_Bezel_Community" folder if one does not exist.
-3. Enter the "Retroarch/shaders/Mega_Bezel_Community" folder and from the command-line run:
+2. Enter the *"/Retroarch/shaders"* folder and create a *"Mega_Bezel_Community"* folder if one does not exist.
+3. Enter the *"Retroarch/shaders/Mega_Bezel_Community"* folder and from the command-line run:
 
 ```
 git clone https://github.com/Duimon/Duimon-Mega-Bezel
 ```
 
-it will create a "Duimon-Mega-Bezel" folder inside the Mega_Bezel_Community folder. 
+It will create a *"Duimon-Mega-Bezel"* folder inside the *"Mega_Bezel_Community"* folder. 
 
-To update, go into *the "Duimon-Mega-Bezel" folder* (note the path difference) and run
+To update, go into the *"Duimon-Mega-Bezel"* folder (note the path difference) and run
 
 ```
 git pull
