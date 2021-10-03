@@ -28,6 +28,31 @@ The following instructions assume a Mega Bezel Community folder.
 
 ___
 
+So the file structures is...
+
+    Retroarch/shaders/Mega_Bezel_Community/Duimon-Mega-Bezel
+        	/Graphics
+        	/Presets
+
+
+An example presets folder and contents is...
+
+    Retroarch/shaders/Mega_Bezel_Community/Duimon-Mega-Bezel
+    		/Presets
+    			/Nintendo_3DS
+    				3DS-[ADV]-[LCD-GRID].slangp
+    				3DS-[ADV]-[LCD-GRID]-[Night].slangp
+    				3DS-[STD]-[LCD-GRID].slangp
+    				3DS-[STD]-[LCD-GRID]-[Night].slangp
+    				3DS_Vertical-[ADV]-[LCD-GRID]-[Integer].slangp
+    				3DS_Vertical-[ADV]-[LCD-GRID]-[Integer]-[Night].slangp
+    				3DS_Vertical-[STD]-[LCD-GRID]-[Integer].slangp
+    				3DS_Vertical-[STD]-[LCD-GRID]-[Integer]-[Night].slangp
+    				3DS_Vertical_Alt-[ADV]-[Guest].slangp
+    				3DS_Vertical_Alt-[ADV]-[Guest]-[Night].slangp
+    				3DS_Vertical_Alt-[STD]-[Guest].slangp
+    				3DS_Vertical_Alt-[STD]-[Guest]-[Night].slangp
+
 
 You can install everything to a local clone and update using the following method.
 
