@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Install With Git"
-subtitle: "Installing Duimon-Mega-Bezel Using Git"
+subtitle: "Installing "Duimon-Mega-Bezel" Graphics and Presets Using Git"
 active: "guides"
 image:
   feature: "guides-header.jpg"
