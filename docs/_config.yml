@@ -31,7 +31,7 @@ comments :
 # Internal nav
 nav:
   - GALLERY: "/Gallery-Guides/gallery/"  
-  - GUIDES: "/Gallery-Guides/journal/"
+  - GUIDES: "/Gallery-Guides/guides/"
   - ABOUT: "/Gallery-Guides/about/"
 
 # All translation keys
@@ -49,10 +49,10 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 5
-paginate_path: "/journal/page:num/"
-permalink: "/journal/:title/"
-categories_path: "/journal/category/"
-tags_path: "/journal/tag/"
+paginate_path: "/guides/page:num/"
+permalink: "/guides/:title/"
+categories_path: "/guides/category/"
+tags_path: "/guides/tag/"
 gems: 
  - jekyll-paginate
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]

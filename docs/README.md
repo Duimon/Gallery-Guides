@@ -67,7 +67,7 @@ The **BASEURL** should say `/repositoryname`
   nav:
 
   - GALLERY: `"https://yourusername.github.io/repositoryname/gallery/"`
-  - JOURNAL: `"https://yourusername.github.io/repositoryname/journal/"`
+  - guides: `"https://yourusername.github.io/repositoryname/guides/"`
   - ABOUT: `"https://yourusername.github.io/repositoryname/about/`"
 
 If there are problems with loading assets like CSS files and images, make sure that both **URL** and **BASEURL** are set correctly!!! 
@@ -133,7 +133,7 @@ If you want to use the matching **NEWSLETTER** template, you must always create 
 
 **TAGS** and **CATEGORIES** of the posts 
 
-When you add a tag or a category name in the front matter of a post, don't forget to add the responding markdown files in /journal/tag/ folder and in /journal/category folder, so they can always render when browsing the journal or searching in the respective page.
+When you add a tag or a category name in the front matter of a post, don't forget to add the responding markdown files in /guides/tag/ folder and in /guides/category folder, so they can always render when browsing the guides or searching in the respective page.
 
 ----------
 
@@ -142,7 +142,7 @@ All the credits and the helpers can be found at **ABOUT** page.
 
 ----------
 
-Read <a href="https://sunbliss.github.io/photorama/journal/images-size-for-better-performance/">**this**</a> post if you want to ensure your website always loads fast.
+Read <a href="https://sunbliss.github.io/photorama/guides/images-size-for-better-performance/">**this**</a> post if you want to ensure your website always loads fast.
 
 
 ----------

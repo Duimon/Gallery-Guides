@@ -2,7 +2,7 @@
 layout: "post"
 title: "Install With Git"
 subtitle: "Installing Duimon-Mega-Bezel Using Git"
-active: "journal"
+active: "guides"
 image:
   feature: "guides-header.jpg"
 date: "2021-09-28"
