@@ -30,9 +30,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "/Gallery-Guides/gallery/"  
-  - GUIDES: "/Gallery-Guides/guides/"
-  - ABOUT: "/Gallery-Guides/about/"
+  - GALLERY: "https://duimon.github.io/Gallery-Guides/gallery/"  
+  - GUIDES: "https://duimon.github.io/Gallery-Guides/guides/"
+  - ABOUT: "https://duimon.github.io/Gallery-Guides/about/"
 
 # All translation keys
 translations:
