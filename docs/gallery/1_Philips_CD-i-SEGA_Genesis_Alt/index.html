@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Gallery"
+description: "Screenshots"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+images:
+ - image_path: /gallery/0_albums/Philips_CD-i.jpg
+   gallery-folder: /gallery/Philips_CD-i/
+   gallery-name: "Philips CD-i"
+ - image_path: /gallery/0_albums/PICO-8.jpg
+   gallery-folder: /gallery/PICO-8/
+   gallery-name: "PICO-8"
+ - image_path: /gallery/0_albums/Pocket_Dream_Console.jpg
+   gallery-folder: /gallery/Pocket_Dream_Console/
+   gallery-name: "Pocket Dream Console"
+ - image_path: /gallery/0_albums/PVM_PVM20.jpg
+   gallery-folder: /gallery/PVM_PVM20/
+   gallery-name: "PVM PVM20"
+ - image_path: /gallery/0_albums/PVM_TM20.jpg
+   gallery-folder: /gallery/PVM_TM20/
+   gallery-name: "PVM TM20"
+ - image_path: /gallery/0_albums/ScummVM.jpg
+   gallery-folder: /gallery/ScummVM/
+   gallery-name: "ScummVM"
+ - image_path: /gallery/0_albums/SEGA_32X.jpg
+   gallery-folder: /gallery/SEGA_32X/
+   gallery-name: "SEGA 32X"
+ - image_path: /gallery/0_albums/SEGA_32X_Alt.jpg
+   gallery-folder: /gallery/SEGA_32X_Alt/
+   gallery-name: "SEGA 32X Alt"
+ - image_path: /gallery/0_albums/SEGA_CD.jpg
+   gallery-folder: /gallery/SEGA_CD/
+   gallery-name: "SEGA CD"
+ - image_path: /gallery/0_albums/SEGA_CD_Alt.jpg
+   gallery-folder: /gallery/SEGA_CD_Alt/
+   gallery-name: "SEGA CD Alt"
+ - image_path: /gallery/0_albums/SEGA_CD32X.jpg
+   gallery-folder: /gallery/SEGA_CD32X/
+   gallery-name: "SEGA CD32X"
+ - image_path: /gallery/0_albums/SEGA_CD32X_Alt.jpg
+   gallery-folder: /gallery/SEGA_CD32X_Alt/
+   gallery-name: "SEGA CD32X Alt"
+ - image_path: /gallery/0_albums/SEGA_Dreamcast.jpg
+   gallery-folder: /gallery/SEGA_Dreamcast/
+   gallery-name: "SEGA Dreamcast"
+ - image_path: /gallery/0_albums/SEGA_Dreamcast_Alt.jpg
+   gallery-folder: /gallery/SEGA_Dreamcast_Alt/
+   gallery-name: "SEGA Dreamcast Alt"
+ - image_path: /gallery/0_albums/SEGA_Dreamcast_VMU.jpg
+   gallery-folder: /gallery/SEGA_Dreamcast_VMU/
+   gallery-name: "SEGA Dreamcast VMU"
+ - image_path: /gallery/0_albums/SEGA_Game_Gear.jpg
+   gallery-folder: /gallery/SEGA_Game_Gear/
+   gallery-name: "SEGA Game Gear"
+ - image_path: /gallery/0_albums/SEGA_Genesis.jpg
+   gallery-folder: /gallery/SEGA_Genesis/
+   gallery-name: "SEGA Genesis"
+ - image_path: /gallery/0_albums/SEGA_Genesis_Alt.jpg
+   gallery-folder: /gallery/SEGA_Genesis_Alt/
+   gallery-name: "SEGA Genesis Alt"
+
+
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
+</head>
+
+
+    <body class="gallery">
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	
+			<h2>{{page.title}}</h2>
+			
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+				
+{% for image in page.images %}  	
+
+	               <figure class="gallery-item">
+                         <figure class="effect-selena">
+					<header class='gallery-icon'>
+		       
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.gallery-name}}</h3>
+							<p>{{image.gallery-date}}</p>
+						</div>
+					</figcaption>
+                       </figure>
+				</figure>
+							
+{% endfor %}		
+				
+			</div>
+			
+		</div><!-- END .wrapper -->
+	</section>
+
+
+<br>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+</body></html>

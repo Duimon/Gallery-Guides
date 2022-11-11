@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Gallery"
+description: "Screenshots"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+images:
+ - image_path: /gallery/0_albums/CHIP-8.jpg
+   gallery-folder: /gallery/CHIP-8/
+   gallery-name: "CHIP-8"
+ - image_path: /gallery/0_albums/Coleco_Adam.jpg
+   gallery-folder: /gallery/Coleco_Adam/
+   gallery-name: "Coleco Adam"
+ - image_path: /gallery/0_albums/ColecoVision.jpg
+   gallery-folder: /gallery/ColecoVision/
+   gallery-name: "ColecoVision"
+ - image_path: /gallery/0_albums/Commodore_64C.jpg
+   gallery-folder: /gallery/Commodore_64C/
+   gallery-name: "Commodore 64C"
+ - image_path: /gallery/0_albums/DOSBox.jpg
+   gallery-folder: /gallery/DOSBox/
+   gallery-name: "DOSBox"
+ - image_path: /gallery/0_albums/DOSBox_5150.jpg
+   gallery-folder: /gallery/DOSBox_5150/
+   gallery-name: "DOSBox 5150"
+ - image_path: /gallery/0_albums/Elektronika_BK-0010.jpg
+   gallery-folder: /gallery/Elektronika_BK-0010/
+   gallery-name: "Elektronika BK-0010"
+ - image_path: /gallery/0_albums/Emerson_Arcadia_2001.jpg
+   gallery-folder: /gallery/Emerson_Arcadia_2001/
+   gallery-name: "Emerson Arcadia 2001"
+ - image_path: /gallery/0_albums/Enterprise_128k.jpg
+   gallery-folder: /gallery/Enterprise_128k/
+   gallery-name: "Enterprise 128k"
+ - image_path: /gallery/0_albums/Entex_Adventure_Vision.jpg
+   gallery-folder: /gallery/Entex_Adventure_Vision/
+   gallery-name: "Entex Adventure Vision"
+ - image_path: /gallery/0_albums/Epoch_Super_Cassette_Vision.jpg
+   gallery-folder: /gallery/Epoch_Super_Cassette_Vision/
+   gallery-name: "Epoch Super Cassette Vision"
+ - image_path: /gallery/0_albums/Epoch_Super_Cassette_Vision_Alt.jpg
+   gallery-folder: /gallery/Epoch_Super_Cassette_Vision_Alt/
+   gallery-name: "Epoch Super Cassette Vision Alt"
+ - image_path: /gallery/0_albums/Fairchild_Channel_F.jpg
+   gallery-folder: /gallery/Fairchild_Channel_F/
+   gallery-name: "Fairchild Channel F"
+ - image_path: /gallery/0_albums/FB-Neo.jpg
+   gallery-folder: /gallery/FB-Neo/
+   gallery-name: "FB-Neo"
+ - image_path: /gallery/0_albums/FM-Towns.jpg
+   gallery-folder: /gallery/FM-Towns/
+   gallery-name: "FM-Towns"
+ - image_path: /gallery/0_albums/Fujitsu_FM-7.jpg
+   gallery-folder: /gallery/Fujitsu_FM-7/
+   gallery-name: "Fujitsu FM-7"
+ - image_path: /gallery/0_albums/Funtech_Super_A'Can.jpg
+   gallery-folder: /gallery/Funtech_Super_A'Can/
+   gallery-name: "Funtech Super A'Can"
+ - image_path: /gallery/0_albums/Gamepark_GP32.jpg
+   gallery-folder: /gallery/Gamepark_GP32/
+   gallery-name: "Gamepark GP32"
+
+
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
+</head>
+
+
+    <body class="gallery">
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	
+			<h2>{{page.title}}</h2>
+			
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+				
+{% for image in page.images %}  	
+
+	               <figure class="gallery-item">
+                         <figure class="effect-selena">
+					<header class='gallery-icon'>
+		       
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.gallery-name}}</h3>
+							<p>{{image.gallery-date}}</p>
+						</div>
+					</figcaption>
+                       </figure>
+				</figure>
+							
+{% endfor %}		
+				
+			</div>
+			
+		</div><!-- END .wrapper -->
+	</section>
+
+
+<br>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+</body></html>

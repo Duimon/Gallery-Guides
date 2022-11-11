@@ -1,0 +1,10 @@
+1_Acorn_Archimedes-Arduboy
+1_Atari_2600-Casio_PV-1000
+1_CHIP-8-Gamepark_GP32
+1_GCE_Vectrex-NEC_PC-FX
+1_NEC_SuperGrafx-Nintendo_GBC2Player
+1_Nintendo_N64-PDP-1_Spacewar!
+1_Philips_CD-i-SEGA_Genesis_Alt
+1_SEGA_Mark_III-Sinclair_ZX81
+1_SONY_Playstation-VTech_CreatiVision
+1_VTech_Laser_310-Watara_Supervision

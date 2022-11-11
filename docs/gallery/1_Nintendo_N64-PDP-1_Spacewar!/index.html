@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Gallery"
+description: "Screenshots"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+images:
+ - image_path: /gallery/0_albums/Nintendo_N64.jpg
+   gallery-folder: /gallery/Nintendo_N64/
+   gallery-name: "Nintendo N64"
+ - image_path: /gallery/0_albums/Nintendo_NDS.jpg
+   gallery-folder: /gallery/Nintendo_NDS/
+   gallery-name: "Nintendo NDS"
+ - image_path: /gallery/0_albums/Nintendo_NES.jpg
+   gallery-folder: /gallery/Nintendo_NES/
+   gallery-name: "Nintendo NES"
+ - image_path: /gallery/0_albums/Nintendo_NES_Alt.jpg
+   gallery-folder: /gallery/Nintendo_NES_Alt/
+   gallery-name: "Nintendo NES Alt"
+ - image_path: /gallery/0_albums/Nintendo_Playstation_Prototype.jpg
+   gallery-folder: /gallery/Nintendo_Playstation_Prototype/
+   gallery-name: "Nintendo Playstation Prototype"
+ - image_path: /gallery/0_albums/Nintendo_Pokemon_Mini.jpg
+   gallery-folder: /gallery/Nintendo_Pokemon_Mini/
+   gallery-name: "Nintendo Pokemon Mini"
+ - image_path: /gallery/0_albums/Nintendo_SNES.jpg
+   gallery-folder: /gallery/Nintendo_SNES/
+   gallery-name: "Nintendo SNES"
+ - image_path: /gallery/0_albums/Nintendo_Super_Famicom.jpg
+   gallery-folder: /gallery/Nintendo_Super_Famicom/
+   gallery-name: "Nintendo Super Famicom"
+ - image_path: /gallery/0_albums/Nintendo_Super_Famicom_Alt.jpg
+   gallery-folder: /gallery/Nintendo_Super_Famicom_Alt/
+   gallery-name: "Nintendo Super Famicom Alt"
+ - image_path: /gallery/0_albums/Nintendo_Super_Game_Boy.jpg
+   gallery-folder: /gallery/Nintendo_Super_Game_Boy/
+   gallery-name: "Nintendo Super Game Boy"
+ - image_path: /gallery/0_albums/Nintendo_Super_Game_Boy_Alt.jpg
+   gallery-folder: /gallery/Nintendo_Super_Game_Boy_Alt/
+   gallery-name: "Nintendo Super Game Boy Alt"
+ - image_path: /gallery/0_albums/Nintendo_Virtual_Boy.jpg
+   gallery-folder: /gallery/Nintendo_Virtual_Boy/
+   gallery-name: "Nintendo Virtual Boy"
+ - image_path: /gallery/0_albums/Nintendo_Wii.jpg
+   gallery-folder: /gallery/Nintendo_Wii/
+   gallery-name: "Nintendo Wii"
+ - image_path: /gallery/0_albums/Olivetti_M21.jpg
+   gallery-folder: /gallery/Olivetti_M21/
+   gallery-name: "Olivetti M21"
+ - image_path: /gallery/0_albums/Palm.jpg
+   gallery-folder: /gallery/Palm/
+   gallery-name: "Palm"
+ - image_path: /gallery/0_albums/Panasonic_3DO.jpg
+   gallery-folder: /gallery/Panasonic_3DO/
+   gallery-name: "Panasonic 3DO"
+ - image_path: /gallery/0_albums/PDP-1.jpg
+   gallery-folder: /gallery/PDP-1/
+   gallery-name: "PDP-1"
+ - image_path: /gallery/0_albums/PDP-1_Spacewar!.jpg
+   gallery-folder: /gallery/PDP-1_Spacewar!/
+   gallery-name: "PDP-1 Spacewar!"
+
+
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
+</head>
+
+
+    <body class="gallery">
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	
+			<h2>{{page.title}}</h2>
+			
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+				
+{% for image in page.images %}  	
+
+	               <figure class="gallery-item">
+                         <figure class="effect-selena">
+					<header class='gallery-icon'>
+		       
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.gallery-name}}</h3>
+							<p>{{image.gallery-date}}</p>
+						</div>
+					</figcaption>
+                       </figure>
+				</figure>
+							
+{% endfor %}		
+				
+			</div>
+			
+		</div><!-- END .wrapper -->
+	</section>
+
+
+<br>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+</body></html>

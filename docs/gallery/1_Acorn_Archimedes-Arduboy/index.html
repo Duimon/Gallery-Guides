@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Gallery"
+description: "Screenshots"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+images:
+ - image_path: /gallery/0_albums/Acorn_Archimedes.jpg
+   gallery-folder: /gallery/Acorn_Archimedes/
+   gallery-name: "Acorn Archimedes"
+ - image_path: /gallery/0_albums/Acorn_Atom.jpg
+   gallery-folder: /gallery/Acorn_Atom/
+   gallery-name: "Amstrad CPC"
+ - image_path: /gallery/0_albums/Acorn_Electron.jpg
+   gallery-folder: /gallery/Acorn_Electron/
+   gallery-name: "Amstrad GX4000"
+ - image_path: /gallery/0_albums/Acorn_Electron_Alt.jpg
+   gallery-folder: /gallery/Acorn_Electron_Alt/
+   gallery-name: "Acorn Electron Alt"
+ - image_path: /gallery/0_albums/Amiga_A500_Plus.jpg
+   gallery-folder: /gallery/Amiga_A500_Plus/
+   gallery-name: "Amiga A500 Plus"
+ - image_path: /gallery/0_albums/Amstrad_CPC464.jpg
+   gallery-folder: /gallery/Amstrad_CPC464/
+   gallery-name: "Amstrad CPC464"
+ - image_path: /gallery/0_albums/Amstrad_CPC6128.jpg
+   gallery-folder: /gallery/Amstrad_CPC6128/
+   gallery-name: "Amstrad CPC6128"
+ - image_path: /gallery/0_albums/Amstrad_GX4000.jpg
+   gallery-folder: /gallery/Amstrad_GX4000/
+   gallery-name: "Amstrad GX4000"
+ - image_path: /gallery/0_albums/Apple_II.jpg
+   gallery-folder: /gallery/Apple_II/
+   gallery-name: "Apple II"
+ - image_path: /gallery/0_albums/Apple_IIe.jpg
+   gallery-folder: /gallery/Apple_IIe/
+   gallery-name: "Apple IIe"
+ - image_path: /gallery/0_albums/Apple_IIgs.jpg
+   gallery-folder: /gallery/Apple_IIgs/
+   gallery-name: "Apple IIgs"
+ - image_path: /gallery/0_albums/Apple_IIgs_Woz.jpg
+   gallery-folder: /gallery/Apple_IIgs_Woz/
+   gallery-name: "Apple IIgs Woz"
+ - image_path: /gallery/0_albums/Apple_Macintosh_128k.jpg
+   gallery-folder: /gallery/Apple_Macintosh_128k/
+   gallery-name: "Apple Macintosh 128k"
+ - image_path: /gallery/0_albums/Apple_Macintosh_IIx.jpg
+   gallery-folder: /gallery/Apple_Macintosh_IIx/
+   gallery-name: "Apple Macintosh IIx"
+ - image_path: /gallery/0_albums/Apple_Macintosh_LC_III.jpg
+   gallery-folder: /gallery/Apple_Macintosh_LC_III/
+   gallery-name: "Apple Macintosh LC III"
+ - image_path: /gallery/0_albums/Apple_Macintosh_Plus.jpg
+   gallery-folder: /gallery/Apple_Macintosh_Plus/
+   gallery-name: "Apple Macintosh Plus"
+ - image_path: /gallery/0_albums/Arcade.jpg
+   gallery-folder: /gallery/Arcade/
+   gallery-name: "Arcade"
+ - image_path: /gallery/0_albums/Arduboy.jpg
+   gallery-folder: /gallery/Arduboy/
+   gallery-name: "Arduboy"
+
+
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
+</head>
+
+
+    <body class="gallery">
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	
+			<h2>{{page.title}}</h2>
+			
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+				
+{% for image in page.images %}  	
+
+	               <figure class="gallery-item">
+                         <figure class="effect-selena">
+					<header class='gallery-icon'>
+		       
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.gallery-name}}</h3>
+							<p>{{image.gallery-date}}</p>
+						</div>
+					</figcaption>
+                       </figure>
+				</figure>
+							
+{% endfor %}		
+				
+			</div>
+			
+		</div><!-- END .wrapper -->
+	</section>
+
+
+<br>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+</body></html>

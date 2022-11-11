@@ -1,0 +1,129 @@
+---
+layout: page
+title: "Gallery"
+description: "Screenshots"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+images:
+ - image_path: /gallery/0_albums/SONY_Playstation.jpg
+   gallery-folder: /gallery/SONY_Playstation/
+   gallery-name: "SONY Playstation"
+ - image_path: /gallery/0_albums/SONY_Playstation_2.jpg
+   gallery-folder: /gallery/SONY_Playstation_2/
+   gallery-name: "SONY Playstation 2"
+ - image_path: /gallery/0_albums/SONY_Playstation_Alt.jpg
+   gallery-folder: /gallery/SONY_Playstation_Alt/
+   gallery-name: "SONY Playstation Alt"
+ - image_path: /gallery/0_albums/SONY_PSone.jpg
+   gallery-folder: /gallery/SONY_PSone/
+   gallery-name: "SONY PSone"
+ - image_path: /gallery/0_albums/SONY_PSP.jpg
+   gallery-folder: /gallery/SONY_PSP/
+   gallery-name: "SONY PSP"
+ - image_path: /gallery/0_albums/Tandy_CoCo_3.jpg
+   gallery-folder: /gallery/Tandy_CoCo_3/
+   gallery-name: "Tandy CoCo 3"
+ - image_path: /gallery/0_albums/Thomson_M05.jpg
+   gallery-folder: /gallery/Thomson_M05/
+   gallery-name: "Thomson M05"
+ - image_path: /gallery/0_albums/Thomson_T08.jpg
+   gallery-folder: /gallery/Thomson_T08/
+   gallery-name: "Thomson T08"
+ - image_path: /gallery/0_albums/TI-99_4A.jpg
+   gallery-folder: /gallery/TI-99_4A/
+   gallery-name: "TI-99 4A"
+ - image_path: /gallery/0_albums/TIC-80.jpg
+   gallery-folder: /gallery/TIC-80/
+   gallery-name: "TIC-80"
+ - image_path: /gallery/0_albums/Tiger_game_com.jpg
+   gallery-folder: /gallery/Tiger_game_com/
+   gallery-name: "Tiger game.com"
+ - image_path: /gallery/0_albums/Tomy_Tutor.jpg
+   gallery-folder: /gallery/Tomy_Tutor/
+   gallery-name: "Tomy Tutor"
+ - image_path: /gallery/0_albums/TV.jpg
+   gallery-folder: /gallery/TV/
+   gallery-name: "TV"
+ - image_path: /gallery/0_albums/TV6.jpg
+   gallery-folder: /gallery/TV6/
+   gallery-name: "TV6"
+ - image_path: /gallery/0_albums/TV7.jpg
+   gallery-folder: /gallery/TV7/
+   gallery-name: "TV7"
+ - image_path: /gallery/0_albums/uzebox.jpg
+   gallery-folder: /gallery/uzebox/
+   gallery-name: "uzebox"
+ - image_path: /gallery/0_albums/Videoton_TVC.jpg
+   gallery-folder: /gallery/Videoton_TVC/
+   gallery-name: "Videoton TVC"
+ - image_path: /gallery/0_albums/VTech_CreatiVision.jpg
+   gallery-folder: /gallery/VTech_CreatiVision/
+   gallery-name: "VTech CreatiVision"
+
+
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
+</head>
+
+
+    <body class="gallery">
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	
+			<h2>{{page.title}}</h2>
+			
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+				
+{% for image in page.images %}  	
+
+	               <figure class="gallery-item">
+                         <figure class="effect-selena">
+					<header class='gallery-icon'>
+		       
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.gallery-name}}</h3>
+							<p>{{image.gallery-date}}</p>
+						</div>
+					</figcaption>
+                       </figure>
+				</figure>
+							
+{% endfor %}		
+				
+			</div>
+			
+		</div><!-- END .wrapper -->
+	</section>
+
+
+<br>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+</body></html>
