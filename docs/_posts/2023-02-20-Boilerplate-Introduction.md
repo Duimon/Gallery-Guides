@@ -73,9 +73,7 @@ Now let's take a look at the example preset.
 #### Duimon-Mega-Bezel\Presets\Advanced\Acorn_Archimedes\Archimedes-[ADV]-[Guest]-[Bezel].slangp
 
 
-<div class="box">
- <pre>
-  <code class=language-clike>">
+```cpp
 // DUIMON MEGA BEZEL GRAPHICS AND PRESETS | https://duimon.github.io/Gallery-Guides/ | duimonmb@gmail.com
 // SOME RIGHTS RESERVED - RELEASED UNDER CC BY NC ND LICENSE https://creativecommons.org/licenses/by-nc-nd/4.0/deed
 // ----------------------------------------------------------------------------------------------------------------
@@ -184,9 +182,7 @@ Now let's take a look at the example preset.
 
 // PRESET END
 // ----------------------------------------------------------------------------------------------------------------
-  </code>
- </pre>
-</div>
+```
 <br>
 
 The first thing you may notice is that there are no parameters at all, only references to "params" files. 
