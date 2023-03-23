@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Boilerplate Presets Introduction"
-subtitle: "General Iintroduction the Multiple Reference (Boilerplate) Presets."
+subtitle: "General Iintroduction to the Multiple Reference (Boilerplate) Presets."
 active: "guides"
 image:
   feature: "guides-header.jpg"
