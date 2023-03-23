@@ -391,7 +391,7 @@ Unlike the local references, here (By choosing which parameters are active.) the
 This local and global system continues here, in the first of two override sections.
 
 ```cpp
-/ GRAPHICS OVERRIDES | Overrides for Image layers, scaling, etc 
+// GRAPHICS OVERRIDES | Overrides for Image layers, scaling, etc 
 // that are not related to Guest's shader. (Three examples are provided)
 // These are intended for [Bezel] versions and the following reference should be left commented out for others.
 // ----------------------------------------------------------------------------------------------------------------
