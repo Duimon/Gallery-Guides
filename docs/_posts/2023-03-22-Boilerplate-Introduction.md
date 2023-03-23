@@ -64,7 +64,7 @@ For those of you familiar with my pack, the "Presets" and "Graphics" folder (Exc
 
 There are some additional folders that are new. Let's take a look at the folder structure.
 
-![Folder Structure](./Images/FolderStructure.png)
+![Folder Structure](./img/FolderStructure.png)
 
 The "res" folder (Resource) has sub-directories that contain params files specific to shader parameter categories, the name of the folder reflects the category. Additionally there are two local override folders.
 
