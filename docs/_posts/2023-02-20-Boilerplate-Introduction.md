@@ -431,7 +431,7 @@ This local and global system continues here, in the first of two override sectio
 //#reference "../../../zzz_global_params/Graphics/user2.params"
 ```
 
-There is a section description at the top, followed by some commented local override references, an active global override reference, and ending with an inactive reference for the Custom_Bezel_002 subclass.
+There is a section description at the top, followed by some commented local override references, an active global override reference, ending with an inactive reference for the Custom_Bezel_002 subclass.
 
 The example local reference params are extracted from the presets I used to generated decorations for my Batocera project. Each line references a params file that will change parameters having to do with the bezel. (Scale, curvature, frame thickness, bezel height etc.) By choosing which line to comment, changes can be made to each preset locally.
 
