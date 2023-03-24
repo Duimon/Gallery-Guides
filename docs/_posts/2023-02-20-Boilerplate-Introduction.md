@@ -285,32 +285,49 @@ This is a global reference line that is shared by all the Advanced "Bezel" prese
 
 I have five standard subclasses in my presets; Bezel, Custom_Bezel_001, Custom_Bezel_002, PVM20, and TM20. Each of these has a matching global reference target.
 
+There is one additional subclass for presets that don't fit into any of these categories. (e.g. "Monitor" presets.)
+
 The section below the active reference will let you define the base preset locally. I will focus on this more in another guide.
 
 Let's examine the global reference path.
 
-#### Duimon-Mega-Bezel\zzz_global_params\Base_Shader\ADV_Bezel.slangp
+#### \Duimon-Mega-Bezel\zzz_global_params\Base_Shader\ADV_Bezel.slangp
 
 The "Base_Shader" folder contains multiple slangp files. 
 
 ```cpp
 ADV.slangp
+ADV_Bezel.slangp
+ADV_Bezel1.slangp
+ADV_Bezel2.slangp
 ADV_DREZ_1080.slangp
 ADV_DREZ_240.slangp
 ADV_DREZ_480.slangp
 ADV_LCD.slangp
+ADV_PVM20.slangp
+ADV_TM20.slangp
 LITE.slangp
+LITE_Bezel.slangp
+LITE_Bezel1.slangp
+LITE_Bezel2.slangp
 LITE_LCD.slangp
+LITE_PVM20.slangp
+LITE_TM20.slangp
 STD.slangp
+STD_Bezel.slangp
+STD_Bezel1.slangp
+STD_Bezel2.slangp
 STD_DREZ_1080.slangp
 STD_DREZ_240.slangp
 STD_DREZ_480.slangp
 STD_LCD.slangp
+STD_PVM20.slangp
+STD_TM20.slangp
 ```
 <br>
-Each of these slangp files contains multiple references, let's take a look at the active reference target.
+There is a slangp file for every subclass and each of these files contains multiple references, let's take a look at the active reference target.
 
-#### ADV.slangp
+#### ADV_Bezel.slangp
 
 ```cpp
 //#reference "../../../../shaders_slang/bezel/Mega_Bezel/Presets/Base_CRT_Presets/MBZ__0__SMOOTH-ADV__GDV.slangp"
@@ -441,7 +458,7 @@ Now let's examine the "user.params" in the active global reference.
 //#reference "/params/batocera_hud.params"
 ```
 <br>
-As you can see it contains the same references as the local overrides. By choosing which line to make active, the change can be applied to all the presets that have this particular active reference. In this case my intention was to allow for global changes to the bezel and frame style, so only the [Bezel] presets have this reference line active. (Very strange things would happen to my PVM presets if they shared this active reference.)
+As you can see it contains the same references as the local overrides in the previous example. By choosing which line to make active, the change can be applied to all the presets that have this particular active reference. In this case my intention was to allow for global changes to the bezel and frame style, so only the [Bezel] presets have this reference line active. (Very strange things would happen to my PVM presets if they shared this active reference.)
 <br>
 <br>
 The user can add their own active reference line to this file, pointing to a custom personal params file, and apply it to all the [Bezel] presets. Keep in mind that any bezel color parameters will be applied to all the presets. If the goal is to maintain the colors I have chosen, then omit any bezel HSV (Hue, Saturation, and Value.) parameters.
